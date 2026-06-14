@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIFA Fan Page</title>
+    <title>⚽FIFA Fan Page⚽</title>
 </head>
 
 <body style="background-color: lightblue">
 
-    <h1 style="color: rgb(16, 8, 8)" align="center">FIFA Fan Page</h1>
+    <h1 style="color: rgb(16, 8, 8)" align="center">⚽FIFA Fan Page⚽</h1>
     <h3 style="color: rgb(0, 0, 0)" align="center">Where football lives, breathes, and scores goals</h3>
-    <h2 style="color: rgb(0, 0, 0)">
-        <marquee scrollamount="10">USA 🇺🇸 • Canada 🇨🇦 • Mexico 🇲🇽 • Argentina 🇦🇷 • Brazil 🇧🇷 • Colombia 🇨🇴 •
+    <h2 style="color: rgb(4, 100, 37)">
+        <marquee scrollamount="18">USA 🇺🇸 • Canada 🇨🇦 • Mexico 🇲🇽 • Argentina 🇦🇷 • Brazil 🇧🇷 • Colombia 🇨🇴 •
             Ecuador 🇪🇨 •
             Paraguay 🇵🇾 • Uruguay 🇺🇾 • England 🏴 • France 🇫🇷 • Germany 🇩🇪 • Spain 🇪🇸 • Portugal 🇵🇹 • Italy
             🇮🇹 • Netherlands 🇳🇱 • Belgium 🇧🇪 • Croatia 🇭🇷 • Switzerland 🇨🇭 • Austria 🇦🇹 • Norway 🇳🇴 •
@@ -22,10 +22,34 @@
             Australia 🇦🇺 • Jordan 🇯🇴 • Uzbekistan 🇺🇿 • Iraq 🇮🇶 • New Zealand 🇳🇿</marquee>
     </h2>
 
-    <video controls>
-        <source width = "400" height = "300" src = "https://drive.google.com/file/d/1bOeqNQsNwhf7vG82FR9DpUCcL52OQ2DV/view?usp=sharing" type = "video/mp4">
-        Your browser does not support the video tag
-     </video><br>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;  /* centers horizontally */
+      background: lightblue;
+    }
+
+    video {
+      width: 900px;
+      height: 600px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+
+<body>
+
+  <h1>FIFA Fan Page</h1>
+
+  <video controls>
+    <source src="Assets/Videos/IShowSpeed.mp4" type="video/mp4">
+  </video>
+
+</body>
+</html>
+     <hr>
 
     <h2>🏆Top Teams</h2>
     <h3>These national teams have made their mark on football history through outstanding performances, passionate fans,
@@ -116,11 +140,51 @@
     </table>
 
     <hr>
-
+<h2 style="color: rgb(45, 6, 171)">
+        <marquee direction = "right" scrollamount="18">USA 🇺🇸 • Canada 🇨🇦 • Mexico 🇲🇽 • Argentina 🇦🇷 • Brazil 🇧🇷 • Colombia 🇨🇴 •
+            Ecuador 🇪🇨 •
+            Paraguay 🇵🇾 • Uruguay 🇺🇾 • England 🏴 • France 🇫🇷 • Germany 🇩🇪 • Spain 🇪🇸 • Portugal 🇵🇹 • Italy
+            🇮🇹 • Netherlands 🇳🇱 • Belgium 🇧🇪 • Croatia 🇭🇷 • Switzerland 🇨🇭 • Austria 🇦🇹 • Norway 🇳🇴 •
+            Scotland 🏴 • Sweden 🇸🇪 • Türkiye 🇹🇷 • Czechia 🇨🇿 • Bosnia & Herzegovina 🇧🇦 • Morocco 🇲🇦 • Senegal
+            🇸🇳 • Nigeria 🇳🇬 • Ghana 🇬🇭 • Egypt 🇪🇬 • South Africa 🇿🇦 • Tunisia 🇹🇳 • Algeria 🇩🇿 • Ivory
+            Coast 🇨🇮 • DR Congo 🇨🇩 • Japan 🇯🇵 • South Korea 🇰🇷 • Iran 🇮🇷 • Saudi Arabia 🇸🇦 • Qatar 🇶🇦 •
+            Australia 🇦🇺 • Jordan 🇯🇴 • Uzbekistan 🇺🇿 • Iraq 🇮🇶 • New Zealand 🇳🇿</marquee>
+    </h2>
     <h3>⭐Team Ratings</h3>
     <fieldset>
         <legend>Fan Info:</legend>
         <form>
+            <pre>
+                Are you a true football frenzy?! well then go ahead and fill this form to get the latest updates
+            </pre>
+                            <!--Label tags-->
+                            <label for = "Name">Name:</label>
+                            <input type = "text" id = "Name" placeholder = "Enter your name here" name = "name"><br><br>
+
+                            <label for = "Age">Age:</label>
+                            <input type = "Integer" id  = "Age" placeholder = "Enter your age here" age = "age"><br><br> 
+
+                            <label for = "Email">Email:</label>
+                            <input type = "email" id = "Email" placeholder = "Enter your email" email = "email"><br><br>
+
+                            <label for = "Country">Country:</label>
+                            <select id = "Country" name = "country">
+                                        <option value = "Argentina">Argentina</option>
+                                        <option value = "Amsterdam">Amsterdam</option>
+                                        <option value = "Barcelona">Barcelona</option>
+                                        <option value = "Croatia">Croatia</option>
+                                        <option value = "Denmark">Denmark</option>
+                                        <option value = "England">England</option>
+                                        <option value = "Sri Lanka">Sri Lanka</option>
+                            </select><br><br>
+<!--<label for="Special Notes" id="Special notes">Special Notes/Instructions:</label><br>
+      <textarea placeholder="Any Specific requirements..."></textarea><br>
+      <br>-->
+                            <label for = "Notes" id = "Notes">Do you have any additional comments you'd like to share with us?:</label></br>
+                            <textarea placeholder = "Write your thoughts here, dont be shy👀..."></textarea><br>
+
+                    <br>
+
             <p>Argentina <small><b>AR</b></small></p> <img width = "70" height = "50" src = "Assets/Images/1200px-Flag_of_Argentina.svg.png" alt = "argentina-flag"><br>
                         <input type = "radio" name = "arg" value = "5"> ⭐⭐⭐⭐⭐<br>
                         <input type = "radio" name = "arg" value = "4"> ⭐⭐⭐⭐<br>
